@@ -284,33 +284,51 @@ The application will be available at `http://localhost:3000`
 
 ### User Interface
 
-**Dashboard - Flood Reports Overview**
-![Dashboard](./screenshots/dashboard.png)
-*Main dashboard showing all active flood reports on an interactive map*
+**User Dashboard**
+![User Dashboard](./screenshots/User%20Dashboard.png)
+*Main dashboard showing all active flood reports and user statistics*
 
-**Flood Reporting**
-![Report Form](./screenshots/report-form.png)
+**Flood Reporting - Create Report**
+![Report Form](./screenshots/Report%20Form%20.png)
 *Users can report floods with location, severity, and photos*
 
+**Flood Reporting - Submit Details**
+![Report Form 2](./screenshots/Report%20Form%202.png)
+*Complete flood report submission with all required details*
+
 **SOS Emergency Requests**
-![SOS Page](./screenshots/sos-page.png)
-*Emergency help requests for rescue, food, medicine, and evacuation*
+![SOS Page](./screenshots/SOS%20Page.png)
+*Emergency help request interface for rescue, food, medicine, and evacuation*
+
+**SOS Request Details**
+![SOS Page 2](./screenshots/SOS%20Page%202.png)
+*Detailed SOS request form with location and urgency level*
 
 **Emergency Shelters**
-![Shelters](./screenshots/shelters.png)
-*Find nearby shelters with capacity and contact information*
+![Shelters](./screenshots/Shelters%20.png)
+*Find nearby shelters with capacity, facilities, and contact information*
 
 ### Admin Features
 
-**Admin Dashboard**
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-*Statistics and overview of all reports and requests*
+**Admin Dashboard - Overview**
+![Admin Dashboard](./screenshots/Admin%20Dashboard%20.png)
+*Comprehensive statistics and overview of all reports, SOS requests, and system metrics*
+
+**Admin Dashboard - Reports Management**
+![Admin Dashboard 2](./screenshots/Admin%20Dashboard%202.png)
+*Manage and verify flood reports with detailed information*
+
+**Admin Dashboard - SOS Management**
+![Admin Dashboard 3](./screenshots/Admin%20Dashboard%203.png)
+*Handle and assign emergency SOS requests*
+
+**Admin Dashboard - User Management**
+![Admin Dashboard 4](./screenshots/Admin%20Dashboard%204.png)
+*Monitor user activities and manage user accounts*
 
 **AI-Powered Insights**
-![AI Insights](./screenshots/ai-insights.png)
-*Generate automated flood summaries and emergency messages*
-
-> Note: Screenshots to be added after deployment
+![AI Insights](./screenshots/AI%20Insights%20.png)
+*Generate automated flood summaries and emergency messages using AI*
 
 ## Future Enhancements
 
