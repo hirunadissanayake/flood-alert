@@ -320,7 +320,7 @@ The application will be available at `http://localhost:3000`
 
 **Admin Dashboard - SOS Management**
 ![Admin Dashboard 3](./screenshots/Admin%20Dashboard%203.png)
-*Handle and assign emergency SOS requests*
+*Report verification
 
 **Admin Dashboard - User Management**
 ![Admin Dashboard 4](./screenshots/Admin%20Dashboard%204.png)
