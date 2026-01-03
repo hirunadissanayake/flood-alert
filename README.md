@@ -251,6 +251,7 @@ cp .env.example .env
 4. Update `.env`:
 ```env
 VITE_API_URL=http://localhost:5000/api
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
 ```
 
 5. Start the development server:
