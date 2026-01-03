@@ -319,7 +319,6 @@ The application will be available at `http://localhost:3000`
 - SMS alerts integration
 - Multi-language support
 - Weather API integration
-- Image upload for reports
 - Push notifications
 
 
