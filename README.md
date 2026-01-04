@@ -6,9 +6,11 @@ A full-stack web application that enables citizens to report flood incidents, re
 
 ## Live Demo
 
-**Frontend:** [Coming Soon - Deploy to Vercel]  
-**Backend API:** [Coming Soon - Deploy to Render]  
+**Frontend:** [https://flood-alert-weld.vercel.app](https://flood-alert-weld.vercel.app)  
+**Backend API:** [https://flood-alert-api.onrender.com](https://flood-alert-api.onrender.com)  
 **GitHub Repository:** https://github.com/hirunadissanayake/flood-alert
+
+> **Note:** The backend is hosted on Render's free tier and may take 30-60 seconds to wake up after periods of inactivity.
 
 
 ## Features
