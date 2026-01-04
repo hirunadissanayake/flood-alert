@@ -32,6 +32,7 @@ const allowedOrigins = [
   'http://localhost:3001',
   'http://localhost:3002',
   'http://localhost:5173', // Vite dev server
+  'https://flood-alert-weld.vercel.app', // Production frontend
 ];
 
 // Add production frontend URL if provided
