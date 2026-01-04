@@ -16,6 +16,12 @@ function Profile() {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
 
+  // Redirect if no user data
+  if (!user) {
+    navigate('/login');
+    return null;
+  }
+
   // Edit Profile State
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [editFormData, setEditFormData] = useState({
