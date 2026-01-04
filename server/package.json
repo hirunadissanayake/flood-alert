@@ -7,7 +7,9 @@
     "dev": "nodemon src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "create-admin": "ts-node src/scripts/createAdmin.ts",
+    "reset-admin-password": "ts-node src/scripts/resetAdminPassword.ts"
   },
   "keywords": [
     "flood",
