@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { RootState, AppDispatch } from '../redux/store';
@@ -10,6 +10,7 @@ import Input from '../components/common/Input';
 import GoogleMapPicker from '../components/common/GoogleMapPicker';
 import api from '../services/api';
 import { toast } from 'react-toastify';
+import LoadingSpinner from '../components/common/LoadingSpinner';
 
 function Profile() {
   const { user } = useSelector((state: RootState) => state.auth);
@@ -17,9 +18,21 @@ function Profile() {
   const navigate = useNavigate();
 
   // Redirect if no user data
+  useEffect(() => {
+    if (!user) {
+      navigate('/login');
+    }
+  }, [user, navigate]);
+
+  // Show loading while redirecting
   if (!user) {
-    navigate('/login');
-    return null;
+    return (
+      <Layout>
+        <div className="flex justify-center items-center min-h-screen">
+          <LoadingSpinner />
+        </div>
+      </Layout>
+    );
   }
 
   // Edit Profile State
