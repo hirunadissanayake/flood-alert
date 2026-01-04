@@ -9,7 +9,8 @@
     "start": "node dist/server.js",
     "lint": "eslint src/**/*.ts",
     "create-admin": "ts-node src/scripts/createAdmin.ts",
-    "reset-admin-password": "ts-node src/scripts/resetAdminPassword.ts"
+    "reset-admin-password": "ts-node src/scripts/resetAdminPassword.ts",
+    "promote-admin": "ts-node src/scripts/promoteToAdmin.ts"
   },
   "keywords": [
     "flood",
