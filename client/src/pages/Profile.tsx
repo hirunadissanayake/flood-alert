@@ -255,7 +255,7 @@ function Profile() {
           </div>
 
           {/* Location */}
-          {user?.location && (
+          {user?.location && user.location.lat !== undefined && user.location.lng !== undefined && (
             <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6 md:pb-8 border-t border-gray-100 pt-4 sm:pt-6 md:pt-8">
               <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center gap-2">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -265,9 +265,9 @@ function Profile() {
                 Location
               </h4>
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-3 sm:p-4 border border-blue-100">
-                <p className="text-gray-900 font-medium mb-2 text-sm sm:text-base break-words">{user.location.address}</p>
+                <p className="text-gray-900 font-medium mb-2 text-sm sm:text-base break-words">{user.location.address || 'Address not available'}</p>
                 <p className="text-xs sm:text-sm text-gray-600 break-all">
-                  📍 Coordinates: {user.location.lat.toFixed(6)}, {user.location.lng.toFixed(6)}
+                  📍 Coordinates: {user.location.lat?.toFixed(6) || '0.000000'}, {user.location.lng?.toFixed(6) || '0.000000'}
                 </p>
               </div>
             </div>
