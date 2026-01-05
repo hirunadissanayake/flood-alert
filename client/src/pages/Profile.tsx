@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { RootState, AppDispatch } from '../redux/store';
@@ -7,10 +7,12 @@ import Layout from '../components/layout/Layout';
 import Button from '../components/common/Button';
 import Modal from '../components/common/Modal';
 import Input from '../components/common/Input';
-import GoogleMapPicker from '../components/common/GoogleMapPicker';
 import api from '../services/api';
 import { toast } from 'react-toastify';
 import LoadingSpinner from '../components/common/LoadingSpinner';
+
+// Lazy load GoogleMapPicker to avoid blocking the page
+const GoogleMapPicker = lazy(() => import('../components/common/GoogleMapPicker'));
 
 function Profile() {
   const { user } = useSelector((state: RootState) => state.auth);
@@ -456,10 +458,12 @@ function Profile() {
         title="Update Your Location"
       >
         <div className="space-y-4">
-          <GoogleMapPicker
-            location={location}
-            onChange={(newLocation) => setLocation(newLocation)}
-          />
+          <Suspense fallback={<LoadingSpinner />}>
+            <GoogleMapPicker
+              location={location}
+              onChange={(newLocation) => setLocation(newLocation)}
+            />
+          </Suspense>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Address
